@@ -50,6 +50,8 @@ Discord uses the **Solarized Dark** palette for ANSI colors — not standard ter
 | 36 | Cyan | #2aa198 |
 | 37 | White | #ffffff |
 
+![ANSI Foreground Colors](assets/ansi-foreground-colors.jpg)
+
 ```js
 const ESC = '\u001b';
 
@@ -84,6 +86,8 @@ Background colors in Discord do **not** match standard terminal bg codes — the
 | 46 | Light Gray |
 | 47 | White |
 
+![ANSI Background Colors](assets/ansi-background-colors.jpg)
+
 ```js
 const ESC = '\u001b';
 
@@ -110,6 +114,8 @@ const output = [
 | 0 | Reset all (back to default) |
 | 1 | Bold |
 | 4 | Underline |
+
+![ANSI Styles — Bold and Underline](assets/ansi-styles-bold-underline.jpg)
 
 ```js
 const ESC = '\u001b';

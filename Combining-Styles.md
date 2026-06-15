@@ -14,6 +14,10 @@ Separate codes with a semicolon inside the same sequence:
 \u001b[STYLE;COLORm
 ```
 
+![Bold + Color Combos](assets/bold-color-combos.jpg)
+
+![Underline + Color Combos](assets/underline-color-combos.jpg)
+
 ```js
 const ESC = '\u001b';
 
@@ -43,6 +47,8 @@ Chain two separate sequences back to back — one for foreground, one for backgr
 \u001b[FG_CODEm\u001b[BG_CODEm
 ```
 
+![Foreground + Background Combos](assets/foreground-background-combos.jpg)
+
 ```js
 const ESC = '\u001b';
 
@@ -60,9 +66,33 @@ const output = [
 
 ---
 
+## Bold + Underline + Color — All Three
+
+Stack all three modifiers using semicolons: `\u001b[1;4;COLORm`
+
+![Bold + Underline + Color — All Three](assets/bold-underline-color-all-three.jpg)
+
+```js
+const ESC = '\u001b';
+
+const output = [
+  '```ansi',
+  ESC + '[1;4;31m  Bold Underline Red    ' + ESC + '[0m',
+  ESC + '[1;4;32m  Bold Underline Green  ' + ESC + '[0m',
+  ESC + '[1;4;33m  Bold Underline Yellow ' + ESC + '[0m',
+  ESC + '[1;4;36m  Bold Underline Cyan   ' + ESC + '[0m',
+  ESC + '[1;4;35m  Bold Underline Pink   ' + ESC + '[0m',
+  '```',
+].join('\n');
+```
+
+---
+
 ## Mixing Colors Within a Single Line
 
 Reset mid-line with `\u001b[0m` and open a new color sequence:
+
+![Multi-Color on One Line](assets/multi-color-one-line.jpg)
 
 ```js
 const ESC = '\u001b';

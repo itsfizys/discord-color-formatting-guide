@@ -8,6 +8,8 @@ Ready-to-use color formatting patterns for common bot command use cases.
 
 A clean colored status indicator using ANSI:
 
+![Real-World — Status Panel](assets/realworld-status-panel.jpg)
+
 ```js
 const { TextDisplayBuilder, ContainerBuilder, SeparatorBuilder, SeparatorSpacingSize, MessageFlags } = require('discord.js');
 
@@ -46,6 +48,8 @@ await interaction.reply({
 
 Using `diff` blocks to show what changed — green for added, red for removed:
 
+![Real-World — Action Log](assets/realworld-action-log.jpg)
+
 ```js
 const { TextDisplayBuilder, ContainerBuilder, SeparatorBuilder, SeparatorSpacingSize, MessageFlags } = require('discord.js');
 
@@ -82,6 +86,8 @@ await interaction.reply({
 ## 3. YAML-Style Info Panel
 
 Using `yaml` blocks to present key-value data with colored labels:
+
+![Real-World — Info Panel](assets/realworld-info-panel.jpg)
 
 ```js
 const { TextDisplayBuilder, ContainerBuilder, SeparatorBuilder, SeparatorSpacingSize, MessageFlags } = require('discord.js');
@@ -120,6 +126,8 @@ await interaction.reply({
 ## 4. Ping / Network Result with ANSI color-coded latency
 
 Color the latency value based on how fast it is:
+
+![Real-World — Latency Meter](assets/realworld-latency-meter.jpg)
 
 ```js
 const { TextDisplayBuilder, ContainerBuilder, SeparatorBuilder, SeparatorSpacingSize, MessageFlags } = require('discord.js');
@@ -207,6 +215,8 @@ async function ipLookupCommand(interaction, ip) {
 ## 6. Warning Box with fix Block
 
 Using `fix` to make a standout all-orange warning:
+
+![Real-World — Warning Box](assets/realworld-warning-box.jpg)
 
 ```js
 const { TextDisplayBuilder, ContainerBuilder, SeparatorBuilder, SeparatorSpacingSize, MessageFlags } = require('discord.js');

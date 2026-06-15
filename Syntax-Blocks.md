@@ -16,6 +16,8 @@ Lines prefixed with `+` render green, lines prefixed with `-` render red.
 ```
 ````
 
+![Syntax Block — diff](assets/syntax-diff.jpg)
+
 **In a bot command:**
 
 ```js
@@ -46,6 +48,8 @@ This text has no color
 ```
 ````
 
+![Syntax Block — css](assets/syntax-css.jpg)
+
 **In a bot command:**
 
 ```js
@@ -73,6 +77,8 @@ Same bracket syntax as `css`, but gives cyan/teal instead of orange.
 This text has no color
 ```
 ````
+
+![Syntax Block — ini](assets/syntax-ini.jpg)
 
 **In a bot command:**
 
@@ -104,6 +110,8 @@ region: us-east
 uptime: 99.9%
 ```
 ````
+
+![Syntax Block — yaml](assets/syntax-yaml.jpg)
 
 **In a bot command:**
 
@@ -137,6 +145,8 @@ No prefixes or brackets required
 ```
 ````
 
+![Syntax Block — fix](assets/syntax-fix.jpg)
+
 **In a bot command:**
 
 ```js
@@ -164,6 +174,8 @@ Text wrapped in `** **` inside an `ml` block renders orange.
 This text has no color
 ```
 ````
+
+![Syntax Block — ml](assets/syntax-ml.jpg)
 
 **In a bot command:**
 
